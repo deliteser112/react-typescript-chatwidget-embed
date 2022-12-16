@@ -1,9 +1,4 @@
 # React Chat Widget
-[![circle-ci](https://img.shields.io/circleci/project/github/Wolox/react-chat-widget.svg)](https://circleci.com/gh/Wolox/react-chat-widget)
-[![npm](https://img.shields.io/npm/v/react-chat-widget.svg)](https://www.npmjs.com/package/react-chat-widget)
-
-[![FEArmy](./assets/FEA_open_source_sm.png)](https://github.com/orgs/Wolox/teams/front-end-army/members)
-
 ## Features
 
 - Plain text message UI
@@ -286,9 +281,3 @@ function MyApp() {
 ```
 
 `getCustomLauncher()` is a method that will return the `Launcher` component as seen in the example. By default, the function passed by that prop, will receive the `handleToggle` parameter which is the method that will toggle the widget.
-
-## About
-
-This project is maintained by [Martín Callegari](https://github.com/mcallegari10) and it was written by [Wolox](http://www.wolox.com.ar).
-
-![Wolox](https://raw.githubusercontent.com/Wolox/press-kit/master/logos/logo_banner.png)
