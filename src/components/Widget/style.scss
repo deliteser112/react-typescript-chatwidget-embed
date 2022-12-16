@@ -1,0 +1,32 @@
+@import 'animation';
+@import 'common';
+
+.rcw-widget-container {
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px 20px 0;
+  position: fixed;
+  right: 0;
+  z-index: 9999;
+}
+
+.rcw-full-screen {
+  @include widget-container-fs;
+}
+
+@media screen and (max-width: 800px) {
+  .rcw-widget-container {
+    height: 100%;
+    @include widget-container-fs;
+  }
+}
+
+.rcw-previewer .rcw-message-img {
+  cursor: pointer;
+}
+
+.rcw-close-widget-container {
+  height: max-content;
+  width: max-content;
+}

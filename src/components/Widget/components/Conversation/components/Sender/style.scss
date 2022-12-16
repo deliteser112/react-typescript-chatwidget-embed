@@ -1,0 +1,77 @@
+@import 'variables/colors';
+
+.rcw-sender {
+  align-items: flex-end;
+  background-color: $grey-2;
+  border-radius: 0 0 10px 10px;
+  display: flex;
+  height: max-content;
+  max-height: 95px;
+  min-height: 45px;
+  overflow: hidden;
+  padding: 10px;
+  position: relative;
+
+  &.expand {
+    height: 55px;
+  }
+}
+
+.rcw-new-message {
+  background-color: $white;
+  border: 0;
+  border-radius: 5px;
+  padding: 10px 5px;
+  resize: none;
+  width: calc(100% - 75px);
+
+  &:focus {
+    outline: none;
+  }
+
+  &.expand {
+    height: 40px;
+  }
+}
+
+.rcw-input {
+  display: block;
+  height: 100%;
+  line-height: 20px;
+  max-height: 78px;
+  overflow-y: auto;
+  user-select: text;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+
+  &:focus-visible {
+    outline: none;
+  }
+
+  &[placeholder]:empty::before {
+    content: attr(placeholder);
+    color: $grey-0; 
+  }
+}
+
+.rcw-send, .rcw-picker-btn {
+  background: $grey-2;
+  border: 0;
+  cursor: pointer;
+
+  .rcw-send-icon {
+    height: 25px;
+  }
+}
+
+.rcw-message-disable {
+  background-color: $grey-2;
+  cursor: not-allowed;
+}
+
+@media screen and (max-width: 800px)  {
+  .rcw-sender {
+    border-radius: 0;
+    flex-shrink: 0;
+  }
+}
